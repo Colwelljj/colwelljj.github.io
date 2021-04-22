@@ -9,7 +9,8 @@
 
 }
 .assignment-portal {
-    border-bottom: #2F576E;
+    padding: 15px,15px, 15px, 15px;
+    border-bottom: 3px solid #2F576E;
 }
 .course-portal-footer {
     border: 2px solid black;
