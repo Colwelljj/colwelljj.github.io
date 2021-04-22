@@ -2,6 +2,15 @@ body {
     background-color: antiquewhite;
 }
 
+.float-pic {
+    float: right;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    
+}
+header {
+    width: 100%;
+}
 .site-header {
     border: 2px solid black;
     display:grid;
@@ -15,6 +24,9 @@ body {
 .assignment-portal {
     padding: 15px,15px, 15px, 15px;
     border-bottom: 3px solid #2F576E;
+}
+footer {
+    width: 100%;
 }
 .course-portal-footer {
     border: 2px solid black;
