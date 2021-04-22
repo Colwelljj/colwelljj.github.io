@@ -3,31 +3,36 @@ body {
 }
 
 .float-pic {
-    float: right;
     box-shadow: 0 0 10px black;
     border-radius: 10px;
+    justify-self: end;
+    margin: 15px;
     
 }
+
 header {
     width: 100%;
 }
+
 .site-header {
     border: 2px solid black;
     display:grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repat(2, 80%);
     text-align:center;
     box-shadow: 0 0 10px black;
     border-radius:5px;
     background-color: #2F576E;
-
+    grid-template-rows: 8px;
 }
 .assignment-portal {
     padding: 15px,15px, 15px, 15px;
     border-bottom: 3px solid #2F576E;
 }
+
 footer {
     width: 100%;
 }
+
 .course-portal-footer {
     border: 2px solid black;
     display:grid;
@@ -37,6 +42,7 @@ footer {
     border-radius:5px;
     background-color: #2F576E;    
 }
+
 .bottom-section {
     display: flex;
     grid-column: 1 / 7;
@@ -44,9 +50,11 @@ footer {
     justify-content: space-between;
     align-items: center;    
 }
+
 .lec-copy {
     padding-left: 10px;
 }
+
 .lec-media-credit {
     padding-right: 10px;
 }
