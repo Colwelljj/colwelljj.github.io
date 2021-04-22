@@ -1,3 +1,7 @@
+body {
+    background-color: antiquewhite;
+}
+
 .site-header {
     border: 2px solid black;
     display:grid;
