@@ -1,9 +1,13 @@
 body {
     background-color: white;
+    
 }
 main {
     display: grid;
     grid-template-columns: 1fr;
+    grid-gap: 30px;
+    padding: 20px;
+    
 }
 h1 {
     font-family: 'Zen Dots', cursive;
@@ -38,6 +42,7 @@ header {
     border-radius:5px;
     background-color: #2F576E;
     grid-template-rows: 8px;
+    
 }
 footer {
     text-align: center;
@@ -55,7 +60,6 @@ footer {
     border-radius: 5px;
     grid-gap: 20px 50px;
     padding: 5px;
-    gap: 10%;
     background-color: antiquewhite;
 }
 .section2 {
@@ -64,7 +68,6 @@ footer {
     border-radius: 5px;
     grid-gap: 20px 50px;
     padding: 5px;
-    gap: 10%;
     background-color: antiquewhite;
 }
 .section3 {
@@ -73,6 +76,5 @@ footer {
     border-radius: 5px;
     grid-gap: 20px 50px;
     padding: 5px;
-    gap: 10%;
     background-color: antiquewhite;
 }
