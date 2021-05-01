@@ -1,0 +1,18 @@
+@media only screen and (min-width: 32.5em) {
+    body{
+        background-color: chartreuse;
+    }
+    main {  
+        grid-template-columns: 1fr 1fr;
+    }
+    .section1 {
+        grid-column: span 1;
+    }
+    .section2 {
+        grid-column: span 1;
+    }
+    .section3 {
+        grid-column: span 2;
+    }
+}
+
