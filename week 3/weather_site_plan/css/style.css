@@ -72,7 +72,13 @@ nav {
 }
 .forcast {
     display: block;
-    display: block;
+    display: block;   .contentbox {
+        background-color: #232E27;
+        color: #E2E6E4;
+        margin-top: .5em;
+        margin-bottom: .5em;
+        padding: 1em;
+    }
 }
 footer {
     background-color: #576B4E;
