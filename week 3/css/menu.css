@@ -1,6 +1,6 @@
 /* Small/Phone View********************************/
 body {
-    background-color: white;
+    background-color: green;
 }
 nav {
     margin: 0 auto;
@@ -43,6 +43,10 @@ nav {
 
 /* Medium Screen *******/
 @media only screen and (min-width: 34.5em) {
+    body {
+        background-color: blue;
+    }
+
     nav {
         max-width:100%;
     }
@@ -62,6 +66,9 @@ nav {
 
 /* Large Screen *******/
 @media only screen and (min-width: 54.5em) {
+    body {
+        background-color: blueviolet;
+    }
     #navigation {
         width:800px;
         margin:16px auto;
