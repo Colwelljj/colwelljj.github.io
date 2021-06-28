@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="js/script.js"></script>
     <script src="js/map.js"></script>
-    
+    <script src="js/windchill.js"></script>
 </head>
 <body>
     <header>
@@ -35,22 +35,31 @@
             <li><a href="preston.html" target="_self">Preston</a></li>
             <li><a href="soda.html" target="_self">Soda Springs</a></li>
             <li><a href="fish-haven.html" target="_self">Fish Haven</a></li>
-            <li><a href="storm-center.html" target="_self">Storm Center</a></li>
-            <li><a class="active" href="gallery-7.html" target="_self">Gallery</a></li>
+            <li><a class="active" href="storm-center.html" target="_self">Storm Center</a></li>
         </ul>
     </nav>
     <main>
-        <div class="placeholder-loading"><img data-src="https://picsum.photos/id/237/200/300" alt="" class="loading" ></div>
-        <div class="placeholder-loading"><img data-src="https://picsum.photos/id/237/200/300" alt="" class="loading" ></div>
-        <div class="placeholder-loading"><img data-src="https://picsum.photos/id/237/200/300" alt="" class="loading" ></div>
-        <div class="placeholder-loading"><img data-src="https://picsum.photos/id/237/200/300" alt="" class="loading" ></div>
-        <div class="placeholder-loading"><img data-src="https://picsum.photos/id/237/200/300" alt="" class="loading" ></div>
-        <div class="placeholder-loading"><img data-src="https://picsum.photos/id/237/200/300" alt="" class="loading" ></div>
-        <div class="placeholder-loading"><img data-src="https://picsum.photos/id/237/200/300" alt="" class="loading" ></div>
-        <div class="placeholder-loading"><img data-src="https://picsum.photos/id/237/200/300" alt="" class="loading" ></div>
-        <div class="placeholder-loading"><img data-src="https://picsum.photos/id/237/200/300" alt="" class="loading" ></div>
-        <div class="placeholder-loading"><img data-src="https://picsum.photos/id/237/200/300" alt="" class="loading" ></div>
+        <form>>
+            <label for="fname">Full name:</label><br>
+            <input type="text" id="fname" name="fname" pattern="[A-Za-z]{5}*" placeholder=""><br>
+            <label for="email">email:</label><br>
+            <input type="email" id="email" name="email" placeholder=""><br><br>
+            <label for="phone">Phone number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$" placeholder=""><br><br>
+            <label for="zipcode">Zip code:</label><br>
+            <input type="number" id="zipcode" name="zipcode" placeholder=""><br><br>
+            <label for="storm_date">email:</label><br>
+            <input type="date" id="storm_date" name="storm_date" placeholder=""><br><br>
+            <label for="storm_date">email:</label><br>
+            <input type="date" id="storm_date" name="storm_date" placeholder=""><br><br>
+            <label for="storm_type">email:</label><br>
+            <input type="date" id="storm_date" name="storm_date" placeholder=""><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
     </main>
+
+    
     <footer>
         <div id="footer-wrapper">
             <div id="contact-info">
