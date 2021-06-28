@@ -41,7 +41,7 @@ monthNum.textContent =monthName[day.getMonth()];
 const year = document.getElementById('year');
 year.textContent = day.getFullYear();
 
-const cry = document.querySelector("copyrightyear");
+const cry = document.querySelector("#copyrightyear");
 cry.textContent = day.getFullYear();
 
 })
