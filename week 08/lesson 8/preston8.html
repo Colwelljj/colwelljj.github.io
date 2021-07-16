@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSite</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/windchill.js"></script>
+</head>
+<body>
+    <header>
+        <div id="pancakes" style= "display: none;">
+            <img src="images/Pancakes.jpg" alt="pancake banner">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m.
+            <br>
+            Saturday at the city park pavilion.</p>
+        </div>
+    
+        <div class= "wrapper">
+            <img id="logo" src="images/MacksInnLogo.png" alt="SiteLogo">
+            <h1> Mack's Inn Weather</h1>
+            <p>The Adventure's site for fun!</p>
+        </div>
+    </header>
+    <nav>
+        <ul id= "navigation">
+            <li><a class="ham" hfref= "#">&#9776;</a></li>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a class="active" href="preston.html" target="_self">Preston</a></li>
+            <li><a href="soda.html" target="_self">Soda Springs</a></li>
+            <li><a href="fish-haven.html" target="_self">Fish Haven</a></li>
+            <li><a href="storm-center.html" target="_self">Storm Center</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="grid-wrapper">
+            <div class="contentbox">
+                <img class="hero" src="images/MacksinnBanner.jpg" alt="banner image">
+            </div>
+            
+        
+            <div class="contentbox">
+               <h4>Weather Summary</h4>
+               <p>Currently: 65°F</p>
+               <p>High: 77°F</p>
+               <p>Low: 45°F</p>
+               <p>Precipitation: 2%</p>
+               <p>Humidity: 41%</p>
+               <p id="feelTemp">Wind: 2 mph</p>> 
+            </div>
+
+            <div class="contentbox">
+                <h4>Daily Forcast</h4>
+
+                <div class="DOW">
+                    <ul>
+                        <li>Wed</li>
+                        <li>Thur</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                        <li>Sun</li>
+                    </ul>
+                </div>
+                
+                <div class="Icons">
+                    <ul>
+                        <li><img alt="forecast picture" class="forecast" src="images/weather icons/Breezy.png">68°F</li>
+                        <li><img alt="forecast picture" class="forecast" src="images/weather icons/Rain.png">64°F</li>
+                        <li><img alt="forecast picture" class="forecast" src="images/weather icons/Mostly Cloudy.png">72°F</li>
+                        <li><img alt="forecast picture" class="forecast" src="images/weather icons/Mostly Sunny.png">75°F</li>
+                        <li><img alt="forecast picture" class="forecast" src="images/weather icons/Mostly Sunny.png">78°F</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contentbox">
+                <h4>Activity</h4>
+                <h4>Big Springs Water Trail</h4>
+                <img src="images/bigspringsriver.jpg" alt="River Image">
+                <p>Big Springs is the headwaters of Henry's Fork and is one of the largest springs in the country. 
+                Henry's Fork is considered one of the best fly-fishing streams in the nation. 
+                Fishermen cast for rainbow and brook trout. Tubing, canoeing, 
+                kayaking and rafting are also popular on the river. 
+                </p>
+
+                <p>The Big Springs National Recreation Water Trail can be accessed from the campground and ends 4.5 miles away at Macks Inn. 
+                It offers a lazy three-hour float or canoe trip through beautiful scenery.
+                Wildlife, including moose, bald eagles and Sandhill cranes, are often seen along the trail.
+                </p>
+
+                <p>The charming and historic John Sack Cabin is nearby, noted for its unique location, construction and furnishings.
+                </p>
+
+                <p>Hiking, biking, horseback riding and ATVing are popular activities. Many miles of trails crisscross Island Park, 
+                including the Continental Divide National Scenic Trail and the Nez Perce Trail are in the area.
+                </p>
+                <p>Credit to National Recreation Trail database. You can find more information and directions in the link bellow:
+                <a href="https://www.nrtdatabase.org/trailDetail.php?recordID=2178#three">National Recreation Trail</a>
+                </p>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div id="footer-wrapper">
+            <div id="contact-info">
+                <h5>Contact Information</h5>
+                <p>(888) 888-8888</p>
+                <p>placeholder@place.null</p>
+                <img class="media" src="images/placeholder.jpg">
+                <img class="media" src="images/placeholder.jpg">
+                <img class="media" src="images/placeholder.jpg">
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                <iframe id="gmap_canvas" 
+                src="https://maps.google.com/maps?q=mack's%20inn%20&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                <a href="https://www.embedgooglemap.net">copy google map</a>
+                </iframe>
+                
+                </div>
+            </div>
+        
+            <div id="bar">
+                <p class="legal">
+                © <span id="copyrightyear">2021</span> | Jonathan Colwell | Idaho |
+                <span id="weekday"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
+                </p>
+            </div>
+
+        </div>
+    </footer> 
+
+</body>
+</html>

@@ -1,12 +1,6 @@
 // Functions for Weather site:
 
-document.addEventListener("DOMContentLoaded", function(){
-    //Call the modified date function
-    //buildModDate();
-    //Small screen menu
-    const menuButton = document.querySelector("#menuBtn")
-    menuButton.addEventListener('click', menuButton)
-    
+document.addEventListener("DOMContentLoaded", function(){   
     //Use the wind chill function.
     let speed = 25;
     let temp = 10;
@@ -39,7 +33,7 @@ function buildWC(speed, temp) {
     // Display Windchill
     console.log(wc);
     // Feels like temp in F
-    feelTemp.innerHTML = wc;
+    feelTemp.innerHTML = "Wind chill:" + wc + "°F";
 
     // return wc;
 
