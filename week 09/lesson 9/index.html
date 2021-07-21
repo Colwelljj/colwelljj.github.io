@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
     <script src="js/script.js"></script>
     <script src="js/map.js"></script>
-    
+    <script src="js/windchill.js"></script>
 </head>
 <body>
     <header>
@@ -31,17 +31,56 @@
     <nav>
         <ul id= "navigation">
             <li><a class="ham" hfref= "#">&#9776;</a></li>
-            <li><a href="index.html" target="_self">Home</a></li>
-            <li><a class="active" href="preston.html" target="_self">Preston</a></li>
+            <li><a class="active" href="index.html" target="_self">Home</a></li>
+            <li><a href="preston9.html" target="_self">Preston</a></li>
             <li><a href="soda.html" target="_self">Soda Springs</a></li>
             <li><a href="fish-haven.html" target="_self">Fish Haven</a></li>
             <li><a href="stormcenter.html" target="_self">Storm Center</a></li>
             <li><a href="gallery-7.html" target="_self">Gallery</a></li>
         </ul>
     </nav>
-    <main>
-    
-        
+     <main>
+        <div class="town-wrapper">
+            <div class="towns">
+                <div>
+                    <h3>Preston</h3>
+                    <h5 id="preston-motto">Motto</h5>
+                    <hr>
+                    <p id="preston-year">Year</p>
+                    <p id="preston-population">Population</p>
+                    <p id="preston-rain">Rain</p>
+                </div>
+                <div>
+                    <img id="preston-image" src="images/preston.jpg" alt="Preston">
+                </div>
+            </div>
+            <div class="towns">
+                <div>
+                    <h3>Soda Springs</h3>
+                    <h5 id="soda-motto">Motto</h5>
+                    <hr>
+                    <p id="soda-year">Year</p>
+                    <p id="soda-population">Population</p>
+                    <p id="soda-rain">Rain</p>
+                </div>
+                <div>
+                    <img id="soda-image" src="images/sodasprings.jpg" alt="Soda Springs">
+                </div>
+            </div>
+            <div class="towns">
+                <div>
+                    <h3>Fish Haven</h3>
+                    <h5 id="fish-motto">Motto</h5>
+                    <hr>
+                    <p id="fish-year">Year</p>
+                    <p id="fish-population">Population</p>
+                    <p id="fish-rain">Rain</p>
+                </div>
+                <div>
+                    <img id="fish-image" src="images/fishhaven.jpg" alt="Fish Haven">
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div id="footer-wrapper">
@@ -63,16 +102,3 @@
                 
                 </div>
             </div>
-        
-            <div id="bar">
-                <p class="legal">
-                © <span id="copyrightyear">2021</span> | Jonathan Colwell | Idaho | CSE 230
-                <span id="weekday"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
-                </p>
-            </div>
-
-        </div>
-    </footer> 
-
-</body>
-</html>
