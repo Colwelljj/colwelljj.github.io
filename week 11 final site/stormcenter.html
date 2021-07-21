@@ -32,7 +32,7 @@
         <ul id= "navigation">
             <li><a class="ham" hfref= "#">&#9776;</a></li>
             <li><a href="index.html" target="_self">Home</a></li>
-            <li><a href="preston10.html" target="_self">Preston</a></li>
+            <li><a href="preston.html" target="_self">Preston</a></li>
             <li><a href="sodasprings.html" target="_self">Soda Springs</a></li>
             <li><a href="fish-haven.html" target="_self">Fish Haven</a></li>
             <li><a class="active" href="stormcenter.html" target="_self">Storm Center</a></li>
@@ -87,10 +87,10 @@
                 </datalist>
             </div>
             <div class="form-box">
-                <label for="rating">
+                <label for="ratingvalue">
                     Storm Severity
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1"
-                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="rating">
+                    <input type="range" id="ratingvalue" value="5" min="1" max="10" step="1"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="ratingvalue">
                         Selected Severity: <span id="ratingvalue">5</span>
                 </label>
             </div>

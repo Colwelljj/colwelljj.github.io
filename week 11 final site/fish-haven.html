@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSite</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/windchill.js"></script>
+</head>
+<body>
+    <header>
+        <div id="pancakes" style= "display: none;">
+            <img src="images/Pancakes.jpg" alt="pancake banner">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m.
+            <br>
+            Saturday at the city park pavilion.</p>
+        </div>
+    
+        <div class= "wrapper">
+            <img id="logo" src="images/MacksInnLogo.png" alt="SiteLogo">
+            <h1> Mack's Inn Weather</h1>
+            <p>The Adventure's site for fun!</p>
+        </div>
+    </header>
+    <nav>
+        <ul id= "navigation">
+            <li><a class="ham" hfref= "#">&#9776;</a></li>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="preston.html" target="_self">Preston</a></li>
+            <li><a href="sodasprings.html" target="_self">Soda Springs</a></li>
+            <li><a class="active" href="fish-haven.html" target="_self">Fish Haven</a></li>
+            <li><a href="stormcenter.html" target="_self">Storm Center</a></li>
+            <li><a href="gallery-7.html" target="_self">Gallery</a></li>
+        </ul>
+    </nav>
+
+     <main>
+        <h2 id="town">Fish Haven</h2>
+        <div class="grid-wrapper">
+            <div class="contentbox">
+                <img id="hero-image" src="images/fish-haven.jpg" alt="hero image">
+            </div>
+            
+            <div class="contentbox">
+                <h5>Weather Summary</h5>
+                <p>Condition: <span id="condition">Error</span></p>
+                <p>Currently: <span id="temp">Error</span>°F</p>
+                <p>High: <span id="highTemp">Error</span>°F</p>
+                <p>Humidity: <span id="humid">Error</span>%</p>
+                <p>Wind: <span id="wind">Error</span>mph</p>
+                <p>Wind Chill: <span id="feelTemp"></span></p>
+            </div>
+            <div class="contentbox">
+                <h5>5 Day Forecast</h5>
+                <table>
+                    <tr>
+                        <th id="day0">Error</th>
+                        <th id="day1">Error</th>
+                        <th id="day2">Error</th>
+                        <th id="day3">Error</th>
+                        <th id="day4">Error</th>
+                    </tr>
+                    <tr>
+                        <td><img alt="forecast picture" class="forecast" id="img0" src="images/weather icons/Breezy.png"><span
+                                id="temp0">Error</span>°F</td>
+                        <td><img alt="forecast picture" class="forecast" id="img1" src="images/weather icons/rain.png"><span
+                                id="temp1">Error</span>°F</td>
+                        <td><img alt="forecast picture" class="forecast" id="img2" src="images/weather icons/fog.png"><span
+                                id="temp2">Error</span>°F</td>
+                        <td><img alt="forecast picture" class="forecast" id="img3" src="images/weather icons/haze.png"><span
+                                id="temp3">Error</span>°F</td>
+                        <td><img alt="forecast picture" class="forecast" id="img4" src="images/weather icons/hail.png"><span
+                                id="temp4">Error</span>°F</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="contentbox">
+                <section id="events">
+                    <h4>Upcoming Events</h4>
+                    <hr>
+                </section>
+            </div>
+            <div class="contentbox4">
+                <h4>Jet Skiing & Swimming & Boating & Water-Skiing & Saling</h4>
+                <img src="images/bearlake.jpg" alt="view of the lake">
+                <p>Jet skis and wave runners are popular water fun on the lake. They can be rented at locations in Garden City, 
+                Utah and Paris, Idaho, some right on the beach.
+                </p>
+                <p>Swimming off the nice, gentle beaches of Bear Lake is fun for the whole family. Be sure to bring a sun umbrella, 
+                a picnic lunch and a beach ball! There are several swimming pools listed below including the Garden City Indoor Community Pool. 
+                Also, many make the trek to Bloomington Lake near Bloomington, Idaho to brave the chilly waters.</p>
+                <p>Boating is a popular activity at Bear Lake. The lake is 20 miles long and 8 miles wide, providing space for many different types of watercraft. </p>
+                <p>Water-skiing is one of the favorite sports on the lake. And you don’t have to worry about riding across the wake of another boat. Plenty of room and no crowds! </p>
+                <p>Bring your own sailing boat since scenic Bear Lake has always been a popular location to unfurl the sails, because a gentle breeze rolls off the lake generally in the early afternoons.
+                Glide on the lake and enjoy one of its spectacular sunsets.</p>
+                <p><a href="https://bearlake.org/water-sports/" target="_blank">Click here to read the
+                        full article.</a></p>
+            </div>
+        </div>
+    </main>
+<footer>
+    <div id="footer-wrapper">
+        <div id="contact-info">
+            <h5>Contact Information</h5>
+            <p>(888) 888-8888</p>
+            <p>placeholder@place.null</p>
+            <img class="media" src="images/Facebook.png">
+            <img class="media" src="images/Twitter.png">
+            <img class="media" src="images/Youtube 1.png">
+        </div>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+            <iframe id="gmap_canvas" 
+            src="https://maps.google.com/maps?q=mack's%20inn%20&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            <a href="https://www.embedgooglemap.net">copy google map</a>
+            </iframe>
+                
+        </div>
+    </div>

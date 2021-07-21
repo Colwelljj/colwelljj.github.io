@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherSite</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/windchill.js"></script>
+</head>
+<body>
+    <header>
+        <div id="pancakes" style= "display: none;">
+            <img src="images/Pancakes.jpg" alt="pancake banner">
+            <p>Saturday = Preston Pancakes in the Park! 9:00 a.m.
+            <br>
+            Saturday at the city park pavilion.</p>
+        </div>
+    
+        <div class= "wrapper">
+            <img id="logo" src="images/MacksInnLogo.png" alt="SiteLogo">
+            <h1> Mack's Inn Weather</h1>
+            <p>The Adventure's site for fun!</p>
+        </div>
+    </header>
+    <nav>
+        <ul id= "navigation">
+            <li><a class="ham" hfref= "#">&#9776;</a></li>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="preston.html" target="_self">Preston</a></li>
+            <li><a class="active" href="sodasprings.html" target="_self">Soda Springs</a></li>
+            <li><a href="fish-haven.html" target="_self">Fish Haven</a></li>
+            <li><a href="stormcenter.html" target="_self">Storm Center</a></li>
+            <li><a href="gallery-7.html" target="_self">Gallery</a></li>
+        </ul>
+    </nav>
+<main>
+        <h2 id="town">Soda Springs</h2>
+        <div class="grid-wrapper">
+            <div class="contentbox">
+                <!-- <img src="images/banner.jpeg" alt="Hero" sizes="80vw" srcset="images/banner500.jpg 500w,
+            images/banner800.jpg 800w,
+            images/banner1100.jpg 1100w,
+            "> -->
+                <img id="hero-image" src="images/sodaspringsbannerimg.jpg" alt="hero image">
+            </div>
+            <!-- <img id="hero-image" src="images/banner-town2.jpeg" alt="hero image"></div> -->
+            <div class="contentbox">
+                <h5>Weather Summary</h5>
+                <p>Condition: <span id="condition">Error</span></p>
+                <p>Currently: <span id="temp">Error</span>°F</p>
+                <p>High: <span id="highTemp">Error</span>°F</p>
+                <p>Humidity: <span id="humid">Error</span>%</p>
+                <p>Wind: <span id="wind">Error</span>mph</p>
+                <p>Wind Chill: <span id="feelTemp"></span></p>
+            </div>
+            <div class="contentbox">
+                <h5>5 Day Forecast</h5>
+                <table>
+                    <tr>
+                        <th id="day0">Error</th>
+                        <th id="day1">Error</th>
+                        <th id="day2">Error</th>
+                        <th id="day3">Error</th>
+                        <th id="day4">Error</th>
+                    </tr>
+                    <tr>
+                        <td><img alt="forecast picture" class="forecast" id="img0" src="images/weather icons/Breezy.png"><span
+                                id="temp0">Error</span>°F</td>
+                        <td><img alt="forecast picture" class="forecast" id="img1" src="images/weather icons/rain.png"><span
+                                id="temp1">Error</span>°F</td>
+                        <td><img alt="forecast picture" class="forecast" id="img2" src="images/weather icons/mostly sunny.png"><span
+                                id="temp2">Error</span>°F</td>
+                        <td><img alt="forecast picture" class="forecast" id="img3" src="images/weather icons/sleet.png"><span
+                                id="temp3">Error</span>°F</td>
+                        <td><img alt="forecast picture" class="forecast" id="img4" src="images/weather icons/hail.png"><span
+                                id="temp4">Error</span>°F</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="contentbox">
+                <section id="events">
+                    <h4>Upcoming Events</h4>
+                    <hr>
+                </section>
+            </div>
+            <div class="contentbox4">
+                <h4>Geyser Park</h4>
+                <img src="images/sodaspringsbanner.jpg" alt="Geyser Park">
+                <p><b>Soda Springs has the only captive geyser in the world.</b></p>
+                <p>Soda Springs is famous for its Geyser as well as the several mineral springs, Octagon Springs, Hooper
+                    Springs and Lover's Delight. In 1937, local businessmen set out to find hot water for a commercial
+                    bathhouse and health resort. On Nov. 28 of that year, the drill struck a carbon dioxide gas chamber
+                    315 feet underground. Hot water soon began shooting out of the ground to more than 45 feet in the
+                    air. Once the 3,500-pound drill bit was removed, the water shot even higher to more than 70 feet.
+                    The Soda Springs Geyser was born. After a few weeks, the city received a telegram from the Secretary
+                    of the Interior asking them to turn the geyser off because “… it is throwing the world-famous ‘Old
+                    Faithful Geyser’ off schedule.”
+                </p>
+                <p>The City of Soda Springs has the geyser set on a timer to go off every hour on the hour. You can see
+                    the Geyser today blow 70 feet into the air and hear it roar "Like a mad dragon," as described by one
+                    of the developers in 1937. The Geyser is open to the public year round, no fees.
+                    If you are visiting and find that it is not go off at the scheduled time, please call City Hall at
+                    208-547-2600.</p>
+
+                <p><a href="https://www.sodaspringsid.com/recreation/geyser_park/index.php" target="_blank">Click
+                        here to read the
+                        full article.</a></p>
+            </div>
+        </div>
+    </main>
+       <footer>
+        <div id="footer-wrapper">
+            <div id="contact-info">
+                <h5>Contact Information</h5>
+                <p>(888) 888-8888</p>
+                <p>placeholder@place.null</p>
+                <img class="media" src="images/Facebook.png">
+                <img class="media" src="images/Twitter.png">
+                <img class="media" src="images/Youtube 1.png">
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                <iframe id="gmap_canvas" 
+                src="https://maps.google.com/maps?q=mack's%20inn%20&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                <a href="https://www.embedgooglemap.net">copy google map</a>
+                </iframe>
+                
+                </div>
+            </div>
