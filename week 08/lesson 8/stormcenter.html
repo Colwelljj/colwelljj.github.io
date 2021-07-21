@@ -39,65 +39,99 @@
             <li><a href="gallery-7.html" target="_self">Gallery</a></li>
         </ul>
     </nav>
-    <main>
-        <section class="form">
-    <form method="get" action="thanks.html">
-        <fieldset>
-            <h3>Personal Information</h3>
-            
-            <label for="name">* Full name: </label><br>
-            <input type="text" id="name" minlength="5" pattern="[A-Za-z ]+" required><br>
-            
-            <label for="email" placeholder="email@example.com">Email: </label><br>
-            <input type="email" id="email"><br>
-            
-            <label for="phone">* Phone number: </label><br>
-            <input type="tel" id="phone" required><br>
-            
-            <label for="zipcode">* Zip Code: </label><br>
-            <input type="number" id="zipcode" minlength="5" required><br>
-            
-            <h3>Storm Information</h3>
-            
-            <label for="date">Storm date: </label><br>
-            <input type="date" id="date"><br>
-            
-            <label for="type">Storm type: </label><br>
-            <input type="list" id="type" list="stormtype" name="stormtype"><br>
-            <datalist id="stormtype">
-                <option value="Flash Flood"></option>
-                <option value="Hail"></option>
-                <option value="Hurricane"></option>
-                <option value="Thunderstorm"></option>
-                <option value="Tornado"></option>
-            </datalist>
-
-            <label>Storm severity: <span id="severityOut"></span></label><br>
-            <input class="inputBox" type="range" min="1" max="10" value="1" id="severity" oninput="outputSeverity(value)" name="severity"></label><br>
-            
-           
-            <label for="region">Storm region</label><br>
-            <select name='region'>
-                <option value="" selected disabled>Select region... </option>
-                <option value="preston">Preston</option>
-                <option value="sodasprings">Soda Springs</option>
-                <option value="fishhaven">Fish Haven</option>
-            </select>
-            <br>
-            
-            <label for="danger">Are you in danger? </label><br>
-            <input type="radio" name="dangerlevel" value="yes">Yes<br>
-            <input type="radio" name="dangerlevel" value="maybe">Maybe<br>
-            <input type="radio" name="dangerlevel" value="no">No<br>
-           
-           <label for="additional">Additional information or comments: </label><br>
-           <textarea rows="4" cols="30"></textarea><br>
-           <button>Submit</button><br>
-        </fieldset>
-
-
-    </form>
-</section> 
+     <main>
+        <h2>Storm Center</h2>
+        <form action="thanks.html">
+            <div class="form-box">
+                <label>
+                    Full Name
+                    <input type="text" name="fullname" minlength="5" placeholder="Full Name" required>
+                </label>
+            </div>
+            <div class="form-box">
+                <label>
+                    Email
+                    <input type="email" name="email" placeholder="example@mail.com">
+                </label>
+            </div>
+            <div class="form-box">
+                <label>
+                    Phone Number
+                    <input type="tel" name="phone" required placeholder="(888) 888-8888">
+                </label>
+            </div>
+            <div class="form-box">
+                <label>
+                    Zip Code
+                    <input type="number" name="zip" placeholder="Zip Code" required>
+                </label>
+            </div>
+            <div class="form-box">
+                <label>
+                    Storm Date
+                    <input type="date" name="date">
+                </label>
+            </div>
+            <div class="form-box">
+                <label>
+                    Storm Type
+                    <input list="type" name="type">
+                </label>
+                <datalist id="type">
+                    <option value="Flash flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                    <option value="Rain">
+                </datalist>
+            </div>
+            <div class="form-box">
+                <label for="rating">
+                    Storm Severity
+                    <input type="range" id="rating" value="5" min="1" max="10" step="1"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="rating">
+                        Selected Severity: <span id="ratingvalue">5</span>
+                </label>
+            </div>
+            <div class="form-box">
+                <label for="region">
+                    Where is the storm located?
+                    <select id="region">
+                        <option value="" selected disabled>Select Region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda-springs">Soda Springs</option>
+                        <option value="fish-haven">Fish Haven</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-box">
+                <label>Are you in-danger?</label>
+                <div>
+                    <label for="no">
+                        <input type="radio" id="no" name="in-danger" value="no"> No
+                    </label>
+                    <br>
+                    <label for="maybe">
+                        <input type="radio" id="maybe" name="in-danger" value="maybe"> Maybe
+                    </label>
+                    <br>
+                    <label for="yes">
+                        <input type="radio" id="yes" name="in-danger" value="yes"> Yes
+                    </label>
+                    <br>
+                </div>
+            </div>
+            <div class="form-box">
+                <label>Additional Information or Comments
+                    <br>
+                    <textarea rows="4">Type your answer here</textarea>
+                </label>
+            </div>
+            <div class="form-box">
+                <button id="Submit">Submit</button>
+            </div>
+        </form>
     </main>
 
     

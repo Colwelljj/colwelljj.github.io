@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Temple Inns and Suites</title>
+    
+</head>
+<body>
+        <header>
+            <a href="index.html"><img id='logo' src="images/templelogo1.png" alt="Temple Inns and Suites Logo"></a>
+            <h1>Temple Inns and Suites</h1>
+            <a class="ham" href="#">☰</a>
+        </header>
+        <nav id="navigation">
+            
+        <ul id='navbar'>
+            <li></li>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="temple.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <!-- <li><a href="/finalproject/receptions.html">Receptions</a></li>
+            <li><a href="/finalproject/missionary.html">Missionary</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+<main class="homepage">
+    <div class='banner'>
+    <section id='ban'>
+    <a href="/finalproject/reservations.html">
+    <h2 >Reserve a room today!</h2>
+    <p>The work of salvation can be done from anywhere! It is for you to choose the destination! </p>
+    </a>
+    </section>
+    <img src="https://assets.ldscdn.org/4f/eb/4feb5a4e556ec9eee605991da421a198255e058a/san_diego_california_temple.jpeg" alt="San Diego California Temple.">
+    </div>
+    
+    <div id='homemain'>
+        <section id="grid1">
+        <img src="https://assets.ldscdn.org/c1/d2/c1d2a9a8a994769ee6e25d4c25fbbfe26f39099b/halifax_nova_scotia_lds_temple.jpg" alt="Halifax Nova Scotia Temple">
+        <h1>Temple Inns and Suites</h1>
+        <p>Our goal here at Temple Inns and Suites is to help make your travel accommodations become realistic and direct you to be able to do a variety of work.
+        </p></section>
+        <section id="grid2">
+        <h2>Temple of the week: Halifax, Nova Scotia</h2>
+        <h3>Temple information:</h3>
+        <p>
+            Phone number: (1) 902-434-6920
+            Address: 44 Cumberland Dr, Dartmouth NS B2V 2C7, Canada
+            Ordinance and Session schedule: By appointment only
+            Temple services: No clothing rental available. No cafeteria available. No patron housing available. No distribution center nearby.
+            Next Temple closures: Monday, 13 September 2021 - Monday, 27 September 2021
+        </p></section>
+    </div>
+</main>
+
+
+
+<footer>
+    <p class='copyright'>&copy; <span id='copyrightyear'></span> | Jonathan Colwell | Idaho | Date: <span id='lastupdated'></span></p>
+</footer>
+</body>
+<script>
+    const lu = document.querySelector('#lastupdated');
+    lu.textContent = document.lastModified;
+
+    const cry = document.querySelector('#copyrightyear');
+    cry.textContent = new Date().getFullYear();
+</script>
+<script>
+    const hambutton = document.querySelector('.ham');
+    const mainnav = document.querySelector('#navigation');
+    hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+</script>
+</html>

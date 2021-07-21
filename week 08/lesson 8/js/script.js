@@ -44,4 +44,7 @@ year.textContent = day.getFullYear();
 const cry = document.querySelector("#copyrightyear");
 cry.textContent = day.getFullYear();
 
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
 })

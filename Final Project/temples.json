@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Cardston Alberta Temple",
+        "phone": "(1) 403-653-3552",
+        "email": "Log in to send an email to the temple",
+        "address1": "348 3rd St W",
+        "city": "Cardston",
+        "state": "Alberta",
+        "zip": 83404,
+        "imageurl": "https://assets.ldscdn.org/c4/c7/c4c78658f898ffd5c68e295f1afb3cc324ee54aa/cardston_alberta_temple_lds.jpeg",
+        "services": [
+            "Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"
+        ],
+        "history": [
+            "27 June 1913", "Announced", "27 July 1913", "Groundbreaking", "26 August 1923", "Dedicated", "2 July 1962", "Rededicated", "22 June 1991", "Rededicated"
+        ],
+        "ordinance": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "session": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "closures": [
+            "Tuesday, 3 August 2021 (Limited Operations)", "Thursday, 12 August 2021 (Limited Operations)", "Monday, 16 August 2021 - Monday, 30 August 2021", "Wednesday, 15 September 2021 (Limited Operations)", "Tuesday, 21 September 2021 (Limited Operations)", "Saturday, 2 October 2021", "Tuesday, 12 October 2021 (Limited Operations)", "Wednesday, 13 October 2021 (Limited Operations)", "Wednesday, 20 October 2021 (Limited Operations)", "Thursday, 11 November 2021", "Friday, 24 December 2021", "Saturday, 25 December 2021", "Friday, 31 December 2021"
+        ],
+        "summary": "The Cardston Alberta Temple (formerly the Alberta Temple) is the eighth constructed and sixth of the still-operating temples of The Church of Jesus Christ of Latter-day Saints. Located in Cardston, Alberta, it is the church's oldest temple outside the United States."
+        },
+
+    {
+        "name": "Rome Italy Temple",
+        "phone": "(39) 06-9480-5050",
+        "email": "Log in to send an email to the temple",
+        "address1": "Via di Settebagni 376",
+        "city": "Rome",
+        "state": "RM",
+        "zip": 84065,
+        "imageurl": "https://assets.ldscdn.org/b5/37/b537f20ccdd2f7ba4f3413a055bcaab21fd3e107/rome_italy_temple.png",
+        "services": [
+            "Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"
+        ],
+        "history": [
+            "4 October 2008", "Announced", "23 October 2010", "Groundbreaking", "10 March 2019", "Dedicated"
+        ],
+        "ordinance": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "session": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "closures": [
+            "Monday, 27 September 2021 - Monday, 4 October 2021", "Friday, 24 December 2021 - Saturday, 25 December 2021", "Friday, 31 December 2021 - Saturday, 1 January 2022", "Monday, 7 March 2022 - Monday, 16 May 2022"
+        ],
+        "summary": "The Rome Italy Temple is a three-story building where LDS Church members perform religious ordinances. It is on the site's east, atop the piazza with stone steps and fountains that lead down to the visitors' center on the opposite end."
+    },
+    {
+        "name": "Laie Hawaii Temple",
+        "phone": "(1) 808-293-2427",
+        "email": "Log in to send an email to the temple",
+        "address1": "55-600 Naniloa Loop",
+        "city": "Laie",
+        "state": "HI",
+        "zip": 96762,
+        "imageurl": "https://assets.ldscdn.org/58/36/5836fd79f0f92e33bfe124e2f86ff43a382af1be/laie_hawaii_temple_lds.jpg",
+        "services": [
+            "Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"
+        ],
+        "history": [
+            "3 October 1915", "Announced", "8 February 1916", "Groundbreaking", "27 November 1919", "Dedicated", "13 June 1978", "Rededicated", "21 November 2010", "Rededicated"
+        ],
+        "ordinance": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "session": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "closures": [
+            "Tuesday, 21 September 2021 (Limited Operations)", "Saturday, 2 October 2021", "Thursday, 25 November 2021", "Friday, 24 December 2021 - Saturday, 25 December 2021", "Saturday, 1 January 2022"
+        ],
+        "summary": "The Laie Hawaii Temple was the fifth temple completed by The Church of Jesus Christ of Latter-day Saints after the Mormon exodus to the Rocky Mountains. It was the first temple built outside the continental United States and the first built outside of Utah."
+    },
+
+    {
+        "name": "Idaho Falls Idaho Temple",
+        "phone": "(1) 208-522-7669",
+        "email": "Log in to send an email to the temple",
+        "address1": "1000 Memorial Dr",
+        "city": "Idaho Falls",
+        "state": "Idaho",
+        "zip": 83402,
+        "imageurl": "https://assets.ldscdn.org/90/a0/90a0c0d599f94a2d955930e90fa95b9aa85a5004/idaho_falls_idaho_temple.png",
+        "services": [
+            "Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"
+        ],
+        "history": [
+            "3 March 1937", "Announced", "19 December 1939", "Groundbreaking", "23 September 1945", "Dedicated", "4 June 2017", "Rededicated"
+        ],
+        "ordinance": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "session": "Please visit churchofjesuschrist.org to schedule an appointment.",
+        "closures": [
+            "Saturday, 2 October 2021", "Wednesday, 24 November 2021 (Limited Operations)", "Thursday, 25 November 2021", "Thursday, 25 November 2021", "Friday, 24 December 2021 - Saturday, 25 December 2021", "Friday, 31 December 2021 (Limited Operations)"
+        ],
+        "summary": "The Idaho Falls Idaho Temple (formerly the Idaho Falls Temple) is the tenth constructed and eighth operating temple of The Church of Jesus Christ of Latter-day Saints. Located in the city of Idaho Falls, Idaho, it was the church's first temple built in Idaho, and the first built with a modern single-spire design."
+    }
+]

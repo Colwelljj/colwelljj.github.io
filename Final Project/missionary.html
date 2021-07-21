@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Roboto&display=swap" rel="stylesheet">
+    <!-- <script src="/finalproject/ham.js"></script> -->
+    <title>Full-time Missionary</title>
+    
+</head>
+<body>
+        <header>
+            <a href="index.html"><img id='logo' src="images/templelogo1.png" alt="Temple Inns and Suites Logo"></a>
+            <h1>Temple Inns and Suites</h1>
+            <a class="ham" href="#">☰</a>
+        </header>
+        <nav id="navigation">
+            
+        <ul id='navbar'>
+            <li></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html">Temples</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul id="subhead">
+            <li id="reception"><a href="receptions.html">Wedding Receptions</a></li>
+            <li id="missionary"><a  href="#">Full-time Temple Missionary</a></li>
+        </ul>
+        </nav>
+    <main class="missionary">
+        <h2>Room information</h2>
+        <section id="king">
+        <h3>King</h3>
+        <p>
+            King rooms are perfect for couples, or a few friends traveling together. They provide one King bed, along with all of our specialized amenities and services.
+        </p>
+        <br>
+        <img src="images/kingbed.jpg" alt="King Bed">
+        </section>
+        <section id="queen">
+        <h3>Queen</h3>
+        <p>
+            Queen rooms are also perfect for couples, or a few friends traveling together. They provide one Queen bed, along with all of our specialized amenities and services.
+        </p>
+        <br>
+        <img src="images/queenbed.jpg" alt="Queen Bed">
+        </section>
+        <section id="doubleking">
+        <h3>Double King</h3>
+        <p>
+            Double King rooms are perfect for families, or larger groups of friends traveling together. They provide two King beds, along with all of our specialized amenities and services.
+        </p>
+        <br>
+        <img src="images/doubleking.jpg" alt="Double King">
+        </section>
+        <section id="doublequeen">
+        <h3>Double Queen</h3>
+        <p>
+            Double Queen rooms are perfect for families, or larger groups of friends traveling together. They provide two Queen beds, along with all of our specialized amenities and services.
+        </p>
+        <br>
+        <img src="images/doublequeen.png" alt="Double Queen">
+        </section>
+        <section id="twin">
+        <h3>Twin</h3>
+        <p>
+            Twin rooms are perfect for solo travelers, or a small group of friends traveling together. They provide one or two Twin beds, along with all of our specialized amenities and services.
+        </p>
+        <br>
+        <img src="images/twin.png" alt="Twin Bed">
+        </section>
+        <section class="form" id="contact">
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <h3>Contact us for more rooming information</h3>
+                    
+                    <label for="name">* Full name: </label><br>
+                    <input type="text" id="name" minlength="5" pattern="[A-Za-z ]+" required><br>
+                    
+                    <label for="email" placeholder="email@example.com">* Email: </label><br>
+                    <input type="email" id="email" required><br>
+                   
+                   <label for="additional">Questions or concerns: </label><br>
+                   <textarea rows="4" cols="50"></textarea><br>
+                   <button>Submit</button><br>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p class='copyright'>&copy; <span id='copyrightyear'></span> | Jonathan Colwell | Idaho | Date: <span id='lastupdated'></span></p>
+    </footer>
+</body>
+
+<script>
+    const lu = document.querySelector('#lastupdated');
+    lu.textContent = document.lastModified;
+
+    const cry = document.querySelector('#copyrightyear');
+    cry.textContent = new Date().getFullYear();
+</script>
+<script>
+    const hambutton = document.querySelector('.ham');
+    const mainnav = document.querySelector('#navigation');
+    hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+</script>
+</html>
