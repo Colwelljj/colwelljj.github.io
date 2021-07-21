@@ -44,6 +44,74 @@ year.textContent = day.getFullYear();
 const cry = document.querySelector("#copyrightyear");
 cry.textContent = day.getFullYear();
 
+async function getDailyWeather() {
+    const url = "https://api.openweathermap.org/data/2.5/weather?zip=83263,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
+
+    const response = await fetch(url);
+
+    if (response.status == 200) {
+        return response.json();
+    } else {
+        throw new Error("No weather found + " + response.status);
+    }
+}
+
+async function getForecastWeather() {
+    const url = "https://api.openweathermap.org/data/2.5/forecast?zip=83263,us&units=imperial&appid=580759d3ebbaeeb067f5d98c62421257";
+
+    const response = await fetch(url);
+
+    if (response.status == 200) {
+        return response.json();
+    } else {
+        throw new Error("No weather found + " + response.status);
+    }
+}
+
+function weather() {
+    const current = getDailyWeather()
+        .then(function (weather) {
+            console.log(weather);
+            let condition = document.getElementById('condition');
+            let temp = document.getElementById('temp');
+            let highTemp = document.getElementById('highTemp');
+            let humid = document.getElementById('humid');
+            let wind = document.getElementById('wind');
+
+            condition.textContent = weather.weather[0].main;
+            temp.textContent = Math.round(weather.main.temp);
+            highTemp.textContent = Math.round(weather.main.temp_max);
+            humid.textContent = weather.main.humidity;
+            wind.textContent = Math.round(weather.wind.speed);
+        });
+    const forecast = getForecastWeather()
+        .then(function (weather) {
+            console.log(weather);
+
+            var dayNum = 0;
+            for (let i = 0; i < weather.list.length; i++) {
+                let date = new Date(weather.list[i].dt_txt);
+                if (date.getHours() == 18) {
+                    let day = document.getElementById('day' + dayNum);
+                    var weekday = daysOfWeek(date);
+                    day.textContent = weekday[date.getDay()];
+
+                    let temp = document.getElementById('temp' + dayNum);
+                    temp.textContent = Math.round(weather.list[i].main.temp);
+
+                    let img = document.getElementById('img' + dayNum);
+                    img.setAttribute('src', 'https://openweathermap.org/img/wn/'+ weather.list[i].weather[0].icon +'@2x.png')
+                    //https://openweathermap.org/img/wn/04d@2x.png
+
+                    dayNum++;
+                }
+                console.log(dayNum);
+            }
+        });
+}
+
+window.addEventListener('load', weather());
+
 function adjustRating(rating) {
     document.getElementById("ratingvalue").innerHTML = rating;
 }
